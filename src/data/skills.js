@@ -8,7 +8,7 @@
 export const skillGroups = [
   {
     category: 'Frontend',
-    items: ['React', 'JavaScript'],
+    items: ['React', 'JavaScript', 'Tailwind CSS'],
   },
   {
     category: 'Backend',
@@ -19,7 +19,7 @@ export const skillGroups = [
     items: ['PostgreSQL', 'Prisma', 'MongoDB'],
   },
   {
-    category: 'Tools',
-    items: ['Git', 'GitHub'],
+    category: 'Tools & Deployment',
+    items: ['Git', 'GitHub', 'Postman', 'Vercel', 'Render'],
   },
 ];

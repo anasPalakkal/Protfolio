@@ -11,9 +11,9 @@
 export const education = [
   {
     id: 'education-1',
-    degree: 'Degree Name', // TODO
-    institution: 'Institution Name', // TODO
-    startDate: 'Year', // TODO
-    endDate: 'Year', // TODO
+    degree: 'B.Voc Mobile Application Development',
+    institution: 'Amal College of Advanced Studies, Nilambur (Calicut University)',
+    startDate: '2023',
+    endDate: '2026',
   },
 ];

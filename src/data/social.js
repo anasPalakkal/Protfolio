@@ -11,19 +11,19 @@ export const socialLinks = [
   {
     id: 'github',
     label: 'GitHub profile',
-    href: 'https://github.com/your-username', // TODO
+    href: 'https://github.com/anasPalakkal',
     icon: 'github',
   },
   {
     id: 'linkedin',
     label: 'LinkedIn profile',
-    href: 'https://linkedin.com/in/your-username', // TODO
+    href: 'https://www.linkedin.com/in/anaspalakkal/',
     icon: 'linkedin',
   },
   {
     id: 'email',
     label: 'Send an email',
-    href: 'mailto:your-email@example.com', // TODO
+    href: 'mailto:anaspalakkalwork@gmail.com',
     icon: 'mail',
   },
 ];

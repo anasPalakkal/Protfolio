@@ -17,27 +17,58 @@
 /** @type {Project[]} */
 export const projects = [
   {
-    id: 'project-one',
-    title: 'Project One', // TODO
-    tagline: 'One-sentence summary of what this project does.', // TODO
+    id: 'expense-tracker',
+    title: 'Expense Tracker — Zil Money',
+    tagline: 'A MERN stack expense tracking app — I built the auth/security layer and the full admin panel.',
     overview:
-      'Describe the real problem this project solves and who it is for. 2-4 sentences, no filler.', // TODO
+      // TODO: add 1-2 more sentences if you can share who the app was for / what problem it solved for users.
+      'An expense-tracking application built during my internship at Zil Money, built on the MERN stack. Users log and manage their expenses through the app, with an internal admin panel for managing users and data.',
     myContribution:
-      'Describe what you specifically built — e.g. the API, the auth flow, the database schema, the UI.', // TODO
-    techStack: ['React', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma'], // TODO: adjust per project
-    features: [
-      'Real feature one',
-      'Real feature two',
-      'Real feature three',
-    ], // TODO
-    challenges: [
-      'A real technical challenge you faced and how you approached it.',
-    ], // TODO
+      'I built the user authentication and security layer, including the login flow and JWT-based session handling. I also designed and built the complete admin panel end to end — both the backend API and the frontend interface used to manage users and application data.',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    // TODO: list 3-5 concrete features of the auth system / admin panel specifically —
+    // e.g. "Role-based access control for admin vs. regular users", "Password reset flow", etc.
+    features: [],
+    // TODO: describe a real challenge — e.g. something tricky about securing the auth flow,
+    // or a decision you made building the admin panel.
+    challenges: [],
     images: [
-      { src: '/images/projects/project-one-01.jpg', alt: 'Project One dashboard view' }, // TODO
+      { src: '/images/projects/expense-tracker-01.jpg', alt: 'Expense Tracker admin panel view' }, // TODO
     ],
-    githubUrl: 'https://github.com/your-username/project-one', // TODO or null
-    liveUrl: 'https://project-one-demo.example.com', // TODO or null
+    githubUrl: null, // internal company project — set a URL only if you have permission to share it
+    liveUrl: null, // TODO if there's a demo you can share
+    featured: true,
+  },
+  {
+    id: 'project-two',
+    title: 'Project Two',
+    tagline: 'One-sentence summary of what this project does.',
+    overview: 'Describe the real problem this project solves and who it is for.',
+    myContribution: 'Describe what you specifically built.',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    features: ['Real feature one', 'Real feature two'],
+    challenges: ['A real technical challenge you faced.'],
+    images: [
+      { src: '/images/projects/project-two-01.jpg', alt: 'Project Two main view' },
+    ],
+    githubUrl: 'https://github.com/your-username/project-two',
+    liveUrl: null,
+    featured: true,
+  },
+  {
+    id: 'project-two',
+    title: 'Project Two',
+    tagline: 'One-sentence summary of what this project does.',
+    overview: 'Describe the real problem this project solves and who it is for.',
+    myContribution: 'Describe what you specifically built.',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    features: ['Real feature one', 'Real feature two'],
+    challenges: ['A real technical challenge you faced.'],
+    images: [
+      { src: '/images/projects/project-two-01.jpg', alt: 'Project Two main view' },
+    ],
+    githubUrl: 'https://github.com/your-username/project-two',
+    liveUrl: null,
     featured: true,
   },
   {

@@ -14,11 +14,6 @@ export function Hero() {
     >
       <Container className="grid items-center gap-12 py-16 md:grid-cols-[1.2fr_0.8fr] md:py-24">
         <div className="flex animate-fade-in flex-col items-start gap-6">
-          <span className="inline-flex items-center gap-2 rounded-full bg-accent-soft px-4 py-1.5 text-xs font-medium text-accent-hover">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            {profile.availability}
-          </span>
-
           <h1 className="text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
             {profile.name}
           </h1>

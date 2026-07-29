@@ -22,7 +22,8 @@ export function Experience() {
                     aria-hidden="true"
                   />
                   <p className="text-xs font-medium uppercase tracking-wide text-accent">
-                    {entry.type} &middot; {entry.startDate} – {entry.endDate}
+                    {entry.type}
+                    {entry.startDate && entry.endDate && ` · ${entry.startDate} – ${entry.endDate}`}
                   </p>
                   <h4 className="mt-1 text-lg font-semibold text-text-primary">{entry.role}</h4>
                   <p className="text-sm font-medium text-text-secondary">{entry.organization}</p>

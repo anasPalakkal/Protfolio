@@ -13,16 +13,16 @@
 export const experience = [
   {
     id: 'internship-1',
-    role: 'Software Development Intern', // TODO: confirm exact title
-    organization: 'Company Name', // TODO
-    startDate: 'Month Year', // TODO
-    endDate: 'Month Year', // TODO
-    type: 'Internship',
-    // TODO: Replace with real responsibilities/contributions from the internship. Keep specific and honest.
+    role: 'MERN Stack Developer Intern',
+    organization: 'Zil Money',
+    startDate: '', // TODO: add start month/year
+    endDate: '', // TODO: add end month/year
+    type: '3-Month Internship',
     description: [
-      'Describe a real task or responsibility you had.',
-      'Describe a technology or workflow you used day-to-day.',
-      'Describe something you learned or contributed to.',
+      'Built the user authentication and security layer for a MERN stack expense-tracking application.',
+      'Designed and built the full admin panel end to end — both frontend and backend.',
+      // TODO: add one more specific detail if you have one — e.g. a library/approach you used
+      // for auth (JWT, bcrypt, role-based access), or a specific admin-panel feature.
     ],
   },
 ];

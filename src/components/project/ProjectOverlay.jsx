@@ -86,16 +86,18 @@ export function ProjectOverlay({ project, onClose }) {
             </div>
           </Section>
 
-          <Section title="Key Features">
-            <ul className="flex flex-col gap-2 text-text-secondary">
-              {project.features.map((feature, index) => (
-                <li key={index} className="flex gap-2">
-                  <span aria-hidden="true">–</span>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </Section>
+          {project.features.length > 0 && (
+            <Section title="Key Features">
+              <ul className="flex flex-col gap-2 text-text-secondary">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="flex gap-2">
+                    <span aria-hidden="true">–</span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </Section>
+          )}
 
           {project.challenges.length > 0 && (
             <Section title="Challenges & Solutions">

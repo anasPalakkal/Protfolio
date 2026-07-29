@@ -8,15 +8,14 @@
 /** @type {AboutContent} */
 export const about = {
   heading: 'About',
-  // TODO: Replace with real bio — 2-3 short paragraphs. Speak to what you build and how you work,
-  // not a list of adjectives. Mention the internship and what it taught you if relevant.
+  // DRAFT — edit this to sound like you, especially the second paragraph.
   paragraphs: [
-    'Write 2–3 sentences here about your background and what got you into full-stack development.',
-    'Write 2–3 sentences here about how you approach building software — e.g. what you care about when writing code, the kind of problems you enjoy solving.',
+    "I'm a Mobile Application Development student at Amal College of Advanced Studies (Calicut University), and along the way I found myself drawn more to building the systems behind an app than the interface on top of it — which pulled me toward full-stack web development. During a 3-month MERN stack internship at Zil Money, I worked on real production code: building the authentication and security layer for an expense-tracking application, and building its admin panel end to end, frontend and backend.",
+    "I like understanding a feature completely before I build it — from the database schema up to the UI — rather than gluing pieces together until something works. Security and reliability on the backend matter a lot to me, and I enjoy the kind of problem where getting the data layer right makes everything built on top of it simpler.",
   ],
   facts: [
-    { label: 'Based in', value: 'Your City, Country' }, // TODO
-    { label: 'Focus', value: 'Full Stack Web Development' },
-    { label: 'Currently', value: 'Open to full-time roles' },
+    { label: 'Based in', value: 'Malappuram, Kerala, India' },
+    { label: 'Focus', value: 'Full Stack Web Development (MERN)' },
+    { label: 'Studying', value: 'B.Voc Mobile Application Development, Calicut University' },
   ],
 };
