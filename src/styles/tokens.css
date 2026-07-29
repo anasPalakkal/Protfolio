@@ -1,0 +1,26 @@
+:root {
+  /* Base palette */
+  --color-bg: #cedada; /* alabaster-grey */
+  --color-surface: #ffffff;
+  --color-surface-alt: #e2e9e9;
+
+  --color-text-primary: #695958; /* taupe-grey */
+  --color-text-secondary: #7a8571; /* ash-grey, darkened for AA contrast on light bg */
+  --color-text-onaccent: #ffffff;
+
+  --color-accent: #3d8f5e; /* deepened frosted-mint */
+  --color-accent-hover: #2f7048;
+  --color-accent-soft: #dcefe2; /* light accent tint for badges/highlights */
+
+  --color-border: #dce4e4;
+
+  /* Layout rhythm — named so components reference intent, not raw px */
+  --nav-height: 4.5rem;
+  --content-padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --content-padding-inline: 2rem;
+  }
+}
