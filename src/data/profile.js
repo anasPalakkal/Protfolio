@@ -10,10 +10,10 @@
 
 /** @type {Profile} */
 export const profile = {
-  name: 'Mohammed Anas',
+  name: 'Anas Palakkal',
   title: 'Full Stack Developer',
   tagline: "Building today's ideas for tomorrow's world.",
   location: 'Malappuram, Kerala, India',
-  avatarSrc: 'anas.jpg', // TODO: add your photo to /public/images/avatar.jpg
+  avatarSrc: 'Anas.jpeg', // TODO: add your photo to /public/images/avatar.jpg
   resumeUrl: '/resume.pdf', // TODO: add your resume to /public/resume.pdf
 };
