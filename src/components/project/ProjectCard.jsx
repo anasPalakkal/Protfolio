@@ -14,19 +14,19 @@ export function ProjectCard({ project, onOpen }) {
     >
       <div className="aspect-[16/10] w-full overflow-hidden bg-surface-alt">
         {isPhone ? (
-          <div className="flex h-full w-full items-center justify-center gap-3 py-5 transition-transform duration-300 group-hover:scale-[1.03]">
+          <div className="flex h-full w-full items-center justify-center gap-3 py-4 transition-transform duration-300 group-hover:scale-[1.03]">
             <PhoneFrame
               src={project.images[0]?.src}
               alt={project.images[0]?.alt ?? ''}
               size="sm"
-              className="h-full max-w-[110px]"
+              className="max-w-[88px]"
             />
             {project.images[1] && (
               <PhoneFrame
                 src={project.images[1].src}
                 alt={project.images[1].alt ?? ''}
                 size="sm"
-                className="h-full max-w-[110px]"
+                className="max-w-[88px]"
               />
             )}
           </div>
