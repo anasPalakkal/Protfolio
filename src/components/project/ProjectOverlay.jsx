@@ -47,33 +47,33 @@ export function ProjectOverlay({ project, onClose }) {
                 {project.title}
               </h2>
               <p className="text-lg text-text-secondary">{project.tagline}</p>
-              <div className="flex flex-wrap gap-3 pt-2">
-                {project.liveUrl ? (
-                  <Button href={project.liveUrl} variant="primary" icon={ExternalLink}>
-                    Live Demo
-                  </Button>
-                ) : (
-                  <DisabledButton icon={ExternalLink}>No live demo</DisabledButton>
-                )}
-                {project.githubUrl ? (
-                  <Button href={project.githubUrl} variant="secondary" icon={Github}>
-                    View Code
-                  </Button>
-                ) : (
-                  <DisabledButton icon={Github}>Private repo</DisabledButton>
-                )}
-              </div>
+              {(project.liveUrl || project.githubUrl) && (
+                <div className="flex flex-wrap gap-3 pt-2">
+                  {project.liveUrl && (
+                    <Button href={project.liveUrl} variant="primary" icon={ExternalLink}>
+                      Live Demo
+                    </Button>
+                  )}
+                  {project.githubUrl && (
+                    <Button href={project.githubUrl} variant="secondary" icon={Github}>
+                      View Code
+                    </Button>
+                  )}
+                </div>
+              )}
             </header>
 
-            <ImageCarousel images={project.images} />
+            <ImageCarousel images={project.images} deviceFrame={project.deviceFrame} />
 
             <Section title="Overview">
               <p className="text-text-secondary">{project.overview}</p>
             </Section>
 
-            <Section title="My Contribution">
-              <p className="text-text-secondary">{project.myContribution}</p>
-            </Section>
+            {project.myContribution && (
+              <Section title="My Contribution">
+                <p className="text-text-secondary">{project.myContribution}</p>
+              </Section>
+            )}
 
             <Section title="Tech Stack">
               <div className="flex flex-wrap gap-2">
@@ -87,8 +87,8 @@ export function ProjectOverlay({ project, onClose }) {
               <Section title="Key Features">
                 <ul className="flex flex-col gap-2 text-text-secondary">
                   {project.features.map((feature, index) => (
-                    <li key={index} className="flex gap-2">
-                      <span aria-hidden="true">–</span>
+                    <li key={index} className="flex gap-2.5">
+                      <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -123,17 +123,5 @@ function Section({ title, children }) {
       </h3>
       {children}
     </section>
-  );
-}
-
-function DisabledButton({ icon: Icon, children }) {
-  return (
-    <span
-      aria-disabled="true"
-      className="inline-flex cursor-not-allowed items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-text-secondary/50"
-    >
-      {children}
-      {Icon && <Icon size={16} aria-hidden="true" />}
-    </span>
   );
 }

@@ -20,7 +20,7 @@ export function ProjectsGrid() {
         <SectionHeading
           eyebrow="Projects"
           title="Things I've built"
-          subtitle="A selection of full-stack projects. Select a card to see the full case study — problem, tech decisions, and links."
+          // subtitle="A selection of full-stack projects. Select a card to see the full case study — problem, tech decisions, and links."
         />
 
         <div

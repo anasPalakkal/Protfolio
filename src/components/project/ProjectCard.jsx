@@ -1,7 +1,10 @@
 import { ArrowUpRight } from 'lucide-react';
 import { Badge } from '../ui/Badge';
+import { PhoneFrame } from './PhoneFrame';
 
 export function ProjectCard({ project, onOpen }) {
+  const isPhone = project.deviceFrame === 'phone';
+
   return (
     <button
       type="button"
@@ -10,14 +13,33 @@ export function ProjectCard({ project, onOpen }) {
       aria-haspopup="dialog"
     >
       <div className="aspect-[16/10] w-full overflow-hidden bg-surface-alt">
-        <img
-          src={project.images[0]?.src}
-          alt={project.images[0]?.alt ?? ''}
-          loading="lazy"
-          width="480"
-          height="300"
-          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-        />
+        {isPhone ? (
+          <div className="flex h-full w-full items-center justify-center gap-3 py-5 transition-transform duration-300 group-hover:scale-[1.03]">
+            <PhoneFrame
+              src={project.images[0]?.src}
+              alt={project.images[0]?.alt ?? ''}
+              size="sm"
+              className="h-full max-w-[110px]"
+            />
+            {project.images[1] && (
+              <PhoneFrame
+                src={project.images[1].src}
+                alt={project.images[1].alt ?? ''}
+                size="sm"
+                className="h-full max-w-[110px]"
+              />
+            )}
+          </div>
+        ) : (
+          <img
+            src={project.images[0]?.src}
+            alt={project.images[0]?.alt ?? ''}
+            loading="lazy"
+            width="480"
+            height="300"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+          />
+        )}
       </div>
 
       <div className="flex flex-1 flex-col gap-2 p-4">

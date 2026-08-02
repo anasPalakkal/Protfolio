@@ -1,26 +1,36 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { PhoneFrame } from './PhoneFrame';
 
-export function ImageCarousel({ images }) {
+export function ImageCarousel({ images, deviceFrame }) {
   const [index, setIndex] = useState(0);
 
   if (!images || images.length === 0) return null;
   const hasMultiple = images.length > 1;
+  const isPhone = deviceFrame === 'phone';
 
   function step(direction) {
     setIndex((current) => (current + direction + images.length) % images.length);
   }
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-border bg-surface-alt">
-      <div className="h-56 w-full sm:h-72 md:h-80 lg:h-[22rem]">
-        <img
-          src={images[index].src}
-          alt={images[index].alt}
-          loading="lazy"
-          className="h-full w-full object-cover"
-        />
-      </div>
+    <div
+      className={`relative overflow-hidden rounded-xl border border-border bg-surface-alt ${
+        isPhone ? 'py-8' : ''
+      }`}
+    >
+      {isPhone ? (
+        <PhoneFrame src={images[index].src} alt={images[index].alt} />
+      ) : (
+        <div className="h-56 w-full sm:h-72 md:h-80 lg:h-[22rem]">
+          <img
+            src={images[index].src}
+            alt={images[index].alt}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </div>
+      )}
 
       {hasMultiple && (
         <>
