@@ -14,6 +14,6 @@ export const profile = {
   title: 'Full Stack Developer',
   tagline: "Building today's ideas for tomorrow's world.",
   location: 'Malappuram, Kerala, India',
-  avatarSrc: 'Anas.jpeg', // TODO: add your photo to /public/images/avatar.jpg
+  avatarSrc: '/images/Anas.jpeg', // TODO: add your photo to /public/images/avatar.jpg
   resumeUrl: '/resume.pdf', // TODO: add your resume to /public/resume.pdf
 };

@@ -105,11 +105,15 @@ export function Contact() {
   return (
     <section id="contact" aria-label="Contact" className="border-b border-border py-20 md:py-28">
       <Container>
+        <div className="flex flex-col gap-4">
+          <SectionHeading
+            eyebrow="Contact"
+          />
+        </div>
         <div className="rounded-3xl border border-border bg-surface p-8 md:p-12">
           <div className="grid gap-10 md:grid-cols-[1fr_1.2fr] md:gap-14">
             <div className="flex flex-col gap-4">
               <SectionHeading
-                eyebrow="Contact"
                 title="Let's work together"
                 subtitle="Have a role or a project in mind? I'd like to hear about it."
               />
@@ -130,9 +134,8 @@ export function Contact() {
                   aria-invalid={Boolean(errors.name)}
                   aria-describedby={errors.name ? 'name-error' : undefined}
                   onChange={() => clearFieldError('name')}
-                  className={`rounded-lg border bg-bg px-4 py-2.5 text-sm text-text-primary outline-none focus:border-accent ${
-                    errors.name ? 'border-red-500' : 'border-border'
-                  }`}
+                  className={`rounded-lg border bg-bg px-4 py-2.5 text-sm text-text-primary outline-none focus:border-accent ${errors.name ? 'border-red-500' : 'border-border'
+                    }`}
                 />
                 {errors.name && (
                   <p id="name-error" className="text-sm text-red-600">
@@ -153,9 +156,8 @@ export function Contact() {
                   aria-invalid={Boolean(errors.email)}
                   aria-describedby={errors.email ? 'email-error' : undefined}
                   onChange={() => clearFieldError('email')}
-                  className={`rounded-lg border bg-bg px-4 py-2.5 text-sm text-text-primary outline-none focus:border-accent ${
-                    errors.email ? 'border-red-500' : 'border-border'
-                  }`}
+                  className={`rounded-lg border bg-bg px-4 py-2.5 text-sm text-text-primary outline-none focus:border-accent ${errors.email ? 'border-red-500' : 'border-border'
+                    }`}
                 />
                 {errors.email && (
                   <p id="email-error" className="text-sm text-red-600">
@@ -175,9 +177,8 @@ export function Contact() {
                   aria-invalid={Boolean(errors.message)}
                   aria-describedby={errors.message ? 'message-error' : undefined}
                   onChange={() => clearFieldError('message')}
-                  className={`resize-none rounded-lg border bg-bg px-4 py-2.5 text-sm text-text-primary outline-none focus:border-accent ${
-                    errors.message ? 'border-red-500' : 'border-border'
-                  }`}
+                  className={`resize-none rounded-lg border bg-bg px-4 py-2.5 text-sm text-text-primary outline-none focus:border-accent ${errors.message ? 'border-red-500' : 'border-border'
+                    }`}
                 />
                 {errors.message && (
                   <p id="message-error" className="text-sm text-red-600">
