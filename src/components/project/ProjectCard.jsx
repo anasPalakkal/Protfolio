@@ -32,13 +32,13 @@ export function ProjectCard({ project, onOpen }) {
           </div>
         ) : (
           <img
-            src={project.images[0]?.src}
-            alt={project.images[0]?.alt ?? ''}
-            loading="lazy"
-            width="480"
-            height="300"
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-          />
+          src={project.images[0]?.src}
+          alt={project.images[0]?.alt ?? ''}
+          loading="lazy"
+          width="480"
+          height="300"
+          className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-[1.03]"
+        />
         )}
       </div>
 

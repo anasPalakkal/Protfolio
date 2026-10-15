@@ -19,6 +19,7 @@
 
 /** @type {Project[]} */
 export const projects = [
+  //Project - 1 Foo D Valley
   {
     id: 'foo-d-valley',
     title: 'Foo D Valley',
@@ -55,6 +56,7 @@ export const projects = [
     liveUrl: null, // TODO: deployment (Vercel/Render) still pending — add once live
     featured: true,
   },
+  //Project - 2 Green Pouch App
   {
     id: 'green-pouch',
     title: 'Green Pouch',
@@ -100,6 +102,7 @@ export const projects = [
     liveUrl: null, // TODO: add once deployed on Render
     featured: true,
   },
+  //Project - 3 Green Pouch Admin Panel
   {
     id: 'green-pouch-admin',
     title: 'Green Pouch — Admin Panel',
@@ -117,12 +120,42 @@ export const projects = [
     // TODO: add a real technical challenge here later.
     challenges: [],
     images: [
-      { src: '/images/projects/GreenPouch-Admin/screenshot-1.png', alt: 'Green Pouch admin panel user overview' },
-      { src: '/images/projects/GreenPouch-Admin/screenshot-2.png', alt: 'Green Pouch admin panel analytics view' },
-      { src: '/images/projects/GreenPouch-Admin/screenshot-3.png', alt: 'Green Pouch admin panel feedback entries' },
+      { src: '/images/projects/AdminPanel/screenshot-1.png', alt: 'Green Pouch admin panel user overview' },
+      { src: '/images/projects/AdminPanel/screenshot-2.png', alt: 'Green Pouch admin panel analytics view' },
+      { src: '/images/projects/AdminPanel/screenshot-3.png', alt: 'Green Pouch admin panel feedback entries' },
     ],
     githubUrl: null, // TODO: add if you want to share the repo
     liveUrl: null, // TODO: add once deployed
     featured: false,
+  },
+  //Project - 4 Sidenote
+  {
+    id: 'sidenote',
+    title: 'Sidenote',
+    tagline: 'Quick notes, screenshots, and to-do lists, without leaving the browser.',
+    overview:
+      'Sidenote is a Chrome extension that puts notes, to-do lists, and screenshots right where you are browsing. Instead of switching tabs just to write something down, a simple toolbar follows you around the page so you can capture things the moment you think of them.',
+    myContribution:
+      'I designed and built this extension entirely on my own, from the idea through development to publishing it on the Chrome Web Store.',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Manifest V3'],
+    features: [
+      'Quick notes to write down and come back to later',
+      'To-do lists organized into lists, with tasks you can check off',
+      'One-click screenshots of the page you are viewing',
+      'Draw or highlight directly on any webpage',
+      'Dark mode for day or night use',
+      'Optional passcode lock to keep notes private',
+    ],
+    challenges: [],
+    images: [
+      { src: '/images/projects/Sidenote/screenshot-1.png', alt: 'Sidenote screenshot 1' },
+      { src: '/images/projects/Sidenote/screenshot-2.png', alt: 'Sidenote screenshot 2' },
+      { src: '/images/projects/Sidenote/screenshot-3.png', alt: 'Sidenote screenshot 3' },
+      { src: '/images/projects/Sidenote/screenshot-4.png', alt: 'Sidenote screenshot 4' },
+      { src: '/images/projects/Sidenote/screenshot-5.png', alt: 'Sidenote screenshot 5' },
+    ],
+    githubUrl: null,
+    liveUrl: 'https://chromewebstore.google.com/detail/sidenote/ijdfbpccdojjacejebodmkjkagbhcjaa?hl=en',
+    featured: true,
   },
 ];

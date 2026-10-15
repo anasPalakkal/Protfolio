@@ -15,19 +15,18 @@ export function ImageCarousel({ images, deviceFrame }) {
 
   return (
     <div
-      className={`relative overflow-hidden rounded-xl border border-border bg-surface-alt ${
-        isPhone ? 'py-8' : ''
-      }`}
+      className={`relative overflow-hidden rounded-xl border border-border bg-surface-alt ${isPhone ? 'py-8' : hasMultiple ? 'p-3 pb-9' : 'p-3'
+        }`}
     >
       {isPhone ? (
         <PhoneFrame src={images[index].src} alt={images[index].alt} />
       ) : (
-        <div className="h-56 w-full sm:h-72 md:h-80 lg:h-[22rem]">
+        <div className="mx-auto aspect-[16/10] w-full md:max-h-[26rem]">
           <img
             src={images[index].src}
             alt={images[index].alt}
             loading="lazy"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         </div>
       )}
@@ -60,9 +59,8 @@ export function ImageCarousel({ images, deviceFrame }) {
                 onClick={() => setIndex(i)}
                 aria-label={`Go to image ${i + 1}`}
                 aria-selected={i === index}
-                className={`h-1.5 w-1.5 rounded-full transition-colors ${
-                  i === index ? 'bg-accent' : 'bg-surface/80'
-                }`}
+                className={`h-1.5 w-1.5 rounded-full transition-colors ${i === index ? 'bg-accent' : 'bg-surface/80'
+                  }`}
               />
             ))}
           </div>
