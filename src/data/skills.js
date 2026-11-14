@@ -8,11 +8,11 @@
 export const skillGroups = [
   {
     category: 'Frontend',
-    items: ['React', 'JavaScript', 'Tailwind CSS'],
+    items: ['React', 'JavaScript', 'TypeScript', 'Next.js', 'Tailwind CSS'],
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express.js', 'REST APIs', 'JWT'],
+    items: ['Node.js', 'Express.js', 'Fastify', 'REST APIs', 'JWT'],
   },
   {
     category: 'Database',
@@ -20,6 +20,6 @@ export const skillGroups = [
   },
   {
     category: 'Tools & Deployment',
-    items: ['Git', 'GitHub', 'Postman', 'Vercel', 'Render'],
+    items: ['Git', 'GitHub', 'Docker', 'Postman', 'Vercel', 'Render', 'Cloudflare AI Gateway'],
   },
 ];
