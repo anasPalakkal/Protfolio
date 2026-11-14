@@ -56,7 +56,82 @@ export const projects = [
     liveUrl: null, // TODO: deployment (Vercel/Render) still pending — add once live
     featured: true,
   },
-  //Project - 2 Green Pouch App
+  //Project - 2 ElaAI
+  {
+    id: 'ela-ai',
+    title: 'ElaAI',
+    tagline: 'An AI recipe assistant with a public, metered API.',
+    overview:
+      'ElaAI is a full-stack AI recipe app. Users chat with an assistant to generate and refine recipes, upload a food photo to identify a dish, and save recipes to a personal library. It also exposes a public /v1 API that other developers can use with their own keys, with per-key rate limits, daily and monthly quotas, and idempotent retries. I designed and built it alone, and deployed it across Vercel, Render, Neon and Upstash. It is a pnpm monorepo with Zod schemas shared between the web app and the API, so the contract is typed end to end.',
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'Fastify',
+      'PostgreSQL (Neon)',
+      'Prisma',
+      'Redis (Upstash)',
+      'Zod',
+      'Google Gemini',
+      'Cloudinary',
+      'Pexels',
+      'Brevo',
+      'Docker',
+      'GitHub Actions',
+    ],
+    features: [
+      'Chat-based recipe generation with conversation history and recipe regeneration',
+      'Food photo analysis that identifies a dish, estimates nutrition, and can turn it into a recipe',
+      'Automatic recipe photos from Pexels, cached in Redis, with uploads stored on Cloudinary',
+      'Saved recipe library',
+      'Email and password sign-up with OTP verification, Google Sign-In, password reset, and revocable Redis-backed sessions',
+      'Public API with key management (hashed keys, up to 3 per user, rotation without downtime), per-minute, daily and monthly limits, Idempotency-Key support, and a usage dashboard',
+      'Cost protection for a free AI tier: usage counters that fail closed on Redis errors and release on upstream failures',
+    ],
+    challenges: [],
+    images: [
+      { src: '/images/projects/ElaAI/screenshot-1.png', alt: 'ElaAI screenshot 1' },
+      { src: '/images/projects/ElaAI/screenshot-2.png', alt: 'ElaAI screenshot 2' },
+      { src: '/images/projects/ElaAI/screenshot-3.png', alt: 'ElaAI screenshot 3' },
+      { src: '/images/projects/ElaAI/screenshot-4.png', alt: 'ElaAI screenshot 4' },
+      { src: '/images/projects/ElaAI/screenshot-5.png', alt: 'ElaAI screenshot 5' },
+    ],
+    githubUrl: null, // TODO: add repo URL
+    liveUrl: 'https://elaai.vercel.app',
+    featured: true,
+  },
+  //Project - 3 Sidenote
+  {
+    id: 'sidenote',
+    title: 'Sidenote',
+    tagline: 'Quick notes, screenshots, and to-do lists, without leaving the browser.',
+    overview:
+      'Sidenote is a Chrome extension that puts notes, to-do lists, and screenshots right where you are browsing. Instead of switching tabs just to write something down, a simple toolbar follows you around the page so you can capture things the moment you think of them.',
+    myContribution:
+      'I designed and built this extension entirely on my own, from the idea through development to publishing it on the Chrome Web Store.',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Manifest V3'],
+    features: [
+      'Quick notes to write down and come back to later',
+      'To-do lists organized into lists, with tasks you can check off',
+      'One-click screenshots of the page you are viewing',
+      'Draw or highlight directly on any webpage',
+      'Dark mode for day or night use',
+      'Optional passcode lock to keep notes private',
+    ],
+    challenges: [],
+    images: [
+      { src: '/images/projects/Sidenote/screenshot-1.png', alt: 'Sidenote screenshot 1' },
+      { src: '/images/projects/Sidenote/screenshot-2.png', alt: 'Sidenote screenshot 2' },
+      { src: '/images/projects/Sidenote/screenshot-3.png', alt: 'Sidenote screenshot 3' },
+      { src: '/images/projects/Sidenote/screenshot-4.png', alt: 'Sidenote screenshot 4' },
+      { src: '/images/projects/Sidenote/screenshot-5.png', alt: 'Sidenote screenshot 5' },
+    ],
+    githubUrl: null,
+    liveUrl: 'https://chromewebstore.google.com/detail/sidenote/ijdfbpccdojjacejebodmkjkagbhcjaa?hl=en',
+    featured: true,
+  },
+  //Project - 4 Green Pouch App
   {
     id: 'green-pouch',
     title: 'Green Pouch',
@@ -102,7 +177,7 @@ export const projects = [
     liveUrl: null, // TODO: add once deployed on Render
     featured: true,
   },
-  //Project - 3 Green Pouch Admin Panel
+  //Project - 5 Green Pouch Admin Panel
   {
     id: 'green-pouch-admin',
     title: 'Green Pouch — Admin Panel',
@@ -127,35 +202,5 @@ export const projects = [
     githubUrl: null, // TODO: add if you want to share the repo
     liveUrl: null, // TODO: add once deployed
     featured: false,
-  },
-  //Project - 4 Sidenote
-  {
-    id: 'sidenote',
-    title: 'Sidenote',
-    tagline: 'Quick notes, screenshots, and to-do lists, without leaving the browser.',
-    overview:
-      'Sidenote is a Chrome extension that puts notes, to-do lists, and screenshots right where you are browsing. Instead of switching tabs just to write something down, a simple toolbar follows you around the page so you can capture things the moment you think of them.',
-    myContribution:
-      'I designed and built this extension entirely on my own, from the idea through development to publishing it on the Chrome Web Store.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Manifest V3'],
-    features: [
-      'Quick notes to write down and come back to later',
-      'To-do lists organized into lists, with tasks you can check off',
-      'One-click screenshots of the page you are viewing',
-      'Draw or highlight directly on any webpage',
-      'Dark mode for day or night use',
-      'Optional passcode lock to keep notes private',
-    ],
-    challenges: [],
-    images: [
-      { src: '/images/projects/Sidenote/screenshot-1.png', alt: 'Sidenote screenshot 1' },
-      { src: '/images/projects/Sidenote/screenshot-2.png', alt: 'Sidenote screenshot 2' },
-      { src: '/images/projects/Sidenote/screenshot-3.png', alt: 'Sidenote screenshot 3' },
-      { src: '/images/projects/Sidenote/screenshot-4.png', alt: 'Sidenote screenshot 4' },
-      { src: '/images/projects/Sidenote/screenshot-5.png', alt: 'Sidenote screenshot 5' },
-    ],
-    githubUrl: null,
-    liveUrl: 'https://chromewebstore.google.com/detail/sidenote/ijdfbpccdojjacejebodmkjkagbhcjaa?hl=en',
-    featured: true,
   },
 ];
