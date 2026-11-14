@@ -195,9 +195,11 @@ export const projects = [
     // TODO: add a real technical challenge here later.
     challenges: [],
     images: [
-      { src: '/images/projects/AdminPanel/screenshot-1.png', alt: 'Green Pouch admin panel user overview' },
-      { src: '/images/projects/AdminPanel/screenshot-2.png', alt: 'Green Pouch admin panel analytics view' },
-      { src: '/images/projects/AdminPanel/screenshot-3.png', alt: 'Green Pouch admin panel feedback entries' },
+      { src: '/images/projects/AdminPanel/screenshot-1.png', alt: 'Green Pouch admin panel dashboard' },
+      { src: '/images/projects/AdminPanel/screenshot-2.png', alt: 'Green Pouch admin panel user page' },
+      { src: '/images/projects/AdminPanel/screenshot-3.png', alt: 'Green Pouch admin panel analetics ' },
+      { src: '/images/projects/AdminPanel/screenshot-4.png', alt: 'Green Pouch admin panel notification page' },
+      { src: '/images/projects/AdminPanel/screenshot-5.png', alt: 'Green Pouch admin panel admin controller' },
     ],
     githubUrl: null, // TODO: add if you want to share the repo
     liveUrl: null, // TODO: add once deployed
