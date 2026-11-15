@@ -51,6 +51,9 @@ export const projects = [
       { src: '/images/projects/Foo-D-Valley/screenshot-1.png', alt: 'Foo D Valley recipe feed' },
       { src: '/images/projects/Foo-D-Valley/screenshot-2.png', alt: 'Foo D Valley recipe detail view' },
       { src: '/images/projects/Foo-D-Valley/screenshot-3.png', alt: 'Foo D Valley user profile view' },
+      { src: '/images/projects/Foo-D-Valley/screenshot-4.png', alt: 'Foo D Valley user profile view' },
+      { src: '/images/projects/Foo-D-Valley/screenshot-5.png', alt: 'Foo D Valley user profile view' },
+      { src: '/images/projects/Foo-D-Valley/screenshot-6.png', alt: 'Foo D Valley user profile view' },
     ],
     githubUrl: null, // TODO: repo is currently private — add URL if you decide to share it, or make it public
     liveUrl: null, // TODO: deployment (Vercel/Render) still pending — add once live
