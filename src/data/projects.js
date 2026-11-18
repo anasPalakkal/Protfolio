@@ -63,9 +63,9 @@ export const projects = [
   {
     id: 'ela-ai',
     title: 'ElaAI',
-    tagline: 'An AI recipe assistant with a public, metered API.',
+    tagline: 'Your AI kitchen assistant: create, refine, and save recipes, with a public API for developers.',
     overview:
-      'ElaAI is a full-stack AI recipe app. Users chat with an assistant to generate and refine recipes, upload a food photo to identify a dish, and save recipes to a personal library. It also exposes a public /v1 API that other developers can use with their own keys, with per-key rate limits, daily and monthly quotas, and idempotent retries. I designed and built it alone, and deployed it across Vercel, Render, Neon and Upstash. It is a pnpm monorepo with Zod schemas shared between the web app and the API, so the contract is typed end to end.',
+      'ElaAI is an AI recipe assistant. Tell it what you feel like eating and it writes a full recipe, which you can keep adjusting through the conversation until it suits you. You can also upload a photo of a dish, and it will tell you what it is, estimate the nutrition, and turn it into a recipe. Recipes you like are saved to your own library. Developers can also plug ElaAI into their own apps, with usage limits to keep things fair. I designed, built, and launched it on my own.',
     techStack: [
       'Next.js',
       'TypeScript',
