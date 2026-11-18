@@ -55,8 +55,8 @@ export const projects = [
       { src: '/images/projects/Foo-D-Valley/screenshot-5.png', alt: 'Foo D Valley user profile view' },
       { src: '/images/projects/Foo-D-Valley/screenshot-6.png', alt: 'Foo D Valley user profile view' },
     ],
-    githubUrl: null, // TODO: repo is currently private — add URL if you decide to share it, or make it public
-    liveUrl: null, // TODO: deployment (Vercel/Render) still pending — add once live
+    githubUrl: 'https://github.com/anasPalakkal/Foo-D-Valley',
+    liveUrl: 'https://foo-d-valley.vercel.app/',
     featured: true,
   },
   //Project - 2 ElaAI
@@ -100,7 +100,7 @@ export const projects = [
       { src: '/images/projects/ElaAI/screenshot-4.png', alt: 'ElaAI screenshot 4' },
       { src: '/images/projects/ElaAI/screenshot-5.png', alt: 'ElaAI screenshot 5' },
     ],
-    githubUrl: null, // TODO: add repo URL
+    githubUrl: 'https://github.com/anasPalakkal/Recipe-AI-Assistant-',
     liveUrl: 'https://elaai.vercel.app',
     featured: true,
   },
@@ -176,7 +176,7 @@ export const projects = [
       { src: '/images/projects/GreenPouch/screenshot-6.jpeg', alt: 'Green Pouch analytics dashboard' },
     ],
     deviceFrame: 'phone',
-    githubUrl: null, // TODO: add if you want to share the repo
+    githubUrl: 'https://github.com/anasPalakkal/GreenPouch', // TODO: add if you want to share the repo
     liveUrl: null, // TODO: add once deployed on Render
     featured: true,
   },
@@ -204,7 +204,7 @@ export const projects = [
       { src: '/images/projects/AdminPanel/screenshot-4.png', alt: 'Green Pouch admin panel notification page' },
       { src: '/images/projects/AdminPanel/screenshot-5.png', alt: 'Green Pouch admin panel admin controller' },
     ],
-    githubUrl: null, // TODO: add if you want to share the repo
+    githubUrl: 'https://github.com/anasPalakkal/WalletCare-Admin', // TODO: add if you want to share the repo
     liveUrl: null, // TODO: add once deployed
     featured: false,
   },
